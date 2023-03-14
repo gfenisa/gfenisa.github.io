@@ -1,0 +1,11 @@
+body {
+    background-color: lightblue;
+  }
+.myDiv {
+    border: 5px outset rgb(3, 3, 3);
+    background-color: rgb(222, 174, 214);    
+    text-align: left;
+    padding: 20px;
+  }
+
+
