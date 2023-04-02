@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 177vw;
+
+    display: grid;
+
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8,1fr);
+
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+:root {
+    background-color: black;
+    --col01: #115363;
+    --col02: #7e2835;
+    --col03: #9c3111;
+    --col04: #5c4454;
+    --col05: #7ea228;
+    --col06: #756b30;
+    --col07: #1a3330;
+    --col08: #2f1583;
+    --col09: #ffffff;
+    --border: 20px solid var(var(--col01));
+    --font-family: futura, sans-serif; 
+    
+
+}
+
+div.box1 {
+    font-size: 20px;
+    font-family: var(--font-family);
+    color: var(--col09);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: var(--col02);
+}
+
+div.box2 {
+    font-size: 20px;
+    font-family: var(--font-family);
+    color: var(--col09);
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: var(--col03);
+}
+
+div.box3 {
+    font-size: 20px;
+    font-family: var(--font-family);
+    color: var(--col09);
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: var(--col04);
+}
+
+div.box4 {
+    font-size: 20px;
+    font-family: var(--font-family);
+    color: var(--col09);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    background-color: var(--col05);
+}
+
+div.box5 {
+    font-size: 20px;
+    font-family: var(--font-family);
+    color: var(--col09);
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    background-color: var(--col06);
+}
+
+div.box6 {
+    font-size: 20px;
+    font-family: var(--font-family);
+    color: var(--col09);
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    background-color: var(--col07);
+}
+
+div.box7 {
+    font-size: 20px;
+    font-family: var(--font-family);
+    color: var(--col09);
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    background: radial-gradient( var(--col05), var(--col03), var(--col02) )
+      
+
+    
+}
+
+
+.container div {
+    padding: 10px;
+    border: 10px solid var(--col01);
+}
+
+
