@@ -1,0 +1,223 @@
+/* z-index order */
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+/* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
+/* https://lospec.com/palette-list/1bit-monitor-glow */
+/* you're welcome to change the colours if you want or any of the other general page style */
+:root{
+  --col-01:#e2e2e2;
+  --col-02:#f0f6f0;
+  --col-03:#85c6f2;
+  --col-04:#165f00;
+  --col-05:#373837;
+  --col-06:#6e6e6e;
+  --col-07:#61aee1;
+  --font-family: Arial, Helvetica, sans-serif;
+  --font-style: bold;
+  --text-align: center;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--col-01);
+  color: var(--col-02);
+  padding: 2vw;
+  font-family: var(--font-family);
+  font-size: 15px;
+  text-align: var(--text-align);
+  color: var(--col-05);
+  
+}
+
+/*
+  i've set up a basic flexbox for each recipe container - you might want to change some of the 
+  flex properties here on the container or on the individual flex items depending on how you want to style them
+*/
+.RecipeBox{
+  font-family: var(--font-family);
+  font-style: var(--font-style);
+  display: flex;
+  flex-direction: column;
+  border-bottom: dotted var(--col-07);
+  padding: 40px;
+}
+
+.FilterSection{
+  border-bottom: dotted var(--col-05);
+  border-top:dotted var(--col-05);
+  border-color: var(--col-07);  
+
+}
+
+.FilterBox{
+  font-family: var(--font-family);
+  font-style: var(--font-style);
+  padding: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  
+
+}
+
+.FilterButton{
+  padding: 12px 28px;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: var(--font-style);
+  font-size: 13px;
+  border-radius: 7px;
+  background-color: var(--col-03);
+  border: 2px;
+  
+}
+
+.FilterButton:hover{
+  background-color: var(--col-07);
+  transition: 0.7s;
+  
+}
+
+.SelectedFilter{
+  color: var(--col-05);
+  background-color: var(--col-07);
+  
+}
+
+.RecipeLink{
+  font-family: var(--font-family);
+  font-style: var(--font-style);
+  color: var(--col-05); 
+  text-align: center;
+  
+
+}
+
+.RecipeName{
+  font-family: var(--font-family);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: var(--text-align);
+  color: var(--col-05);
+  
+
+
+}
+
+.Author{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: var(--text-align);
+  font-size: 20px;
+  color: var(--col-06);
+  
+
+}
+
+.RecipeImageContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+  
+
+}
+
+.RecipeImg{
+
+
+  
+
+}
+
+.Attribution{
+  color: var(--col-05);
+  
+
+}
+
+.Publisher{
+  font-family: var(--font-family);
+  color: var(--col-05);
+  text-align: var(--text-align);
+  font-size: 17px;
+
+}
+
+.Cuisine{
+  font-family: var(--font-family);
+  color: var(--col-05);
+  text-align: var(--text-align);
+  font-size: 17px;
+
+}
+
+.TimeToCook{
+  font-family: var(--font-family);
+  color: var(--col-05);
+  text-align: var(--text-align);
+  font-size: 17px;
+
+}
+
+.SkillLevel{
+  font-family: var(--font-family);
+  color: var(--col-05);
+  text-align: var(--text-align);
+  font-size: 17px;
+
+}
+
+.Course{
+  font-family: var(--font-family);
+  color: var(--col-05);
+  text-align: var(--text-align);
+  font-size: 17px;
+
+}
+
+.Servings{
+  font-family: var(--font-family);
+  color: var(--col-05);
+  text-align: var(--text-align);
+  font-size: 17px;
+
+}
+
+.Dietary{
+  font-family: var(--font-family);
+  color: var(--col-05);
+  text-align: var(--text-align);
+  font-size: 17px;
+
+}
+
+.DatePublished{
+  font-family: var(--font-family);
+  color: var(--col-05);
+  text-align: var(--text-align);
+  font-size: 17px;
+
+}
+
+.DateUpdated{
+  font-family: var(--font-family);
+  color: var(--col-05);
+  text-align: var(--text-align);
+  font-size: 17px;
+
+}
+
+.SpecialEquipment{
+  font-family: var(--font-family);
+  color: var(--col-05);
+  text-align: var(--text-align);
+  font-size: 17px;
+
+}
+
